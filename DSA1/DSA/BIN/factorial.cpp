@@ -1,0 +1,15 @@
+//#include<bits/stdc++.h>
+#include<iostream>
+//
+using namespace std;
+//
+int main(){
+    int x=10;
+    int res=1;
+    while(x>0){
+        res=res*x;
+        x=x-1;
+    }
+    cout<<res;
+    return 0;
+}

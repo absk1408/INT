@@ -1,0 +1,37 @@
+//#include<bits/stdc++.h>
+#include<iostream>
+#include<algorithm>
+using namespace std;
+class write{
+    static write* instance;
+    write(){cout<<"singleton created"<<endl;}
+    write(const write& temp)=delete;
+    write& operator=(const write& temp)=delete;
+    public:
+    static write* getinstance(){
+        if(!instance){
+            cout<<"successfull"<<endl;
+            instance=new write();
+        }
+        else{
+            cout<<"busy"<<endl;
+        }
+        return instance;
+
+    }
+};
+
+write* write::instance=nullptr;
+
+class server{
+    public:
+    void handlereq(string request){
+        write* ptr=write::getinstance();
+        
+    }
+};
+int main(){
+    server s;
+    s.handlereq("i m logger");
+    return 0;
+}
