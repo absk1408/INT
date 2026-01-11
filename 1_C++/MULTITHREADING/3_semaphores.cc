@@ -15,7 +15,7 @@ class semaphores{
     }
     void wait(){
         unique_lock<mutex> lock(mtx);
-        cv.wait(lock,[this](){return counter>0;});//wehenever you use data memeber in lambda always use this
+        cv.wait(lock,[this](){return counter>0;});//wehenever you use data memeber in lambda always use "this"
         --counter;
     }
     void signal(){

@@ -7,7 +7,7 @@ atomic<int> counter(0);
 
 void increment(int id) {
     for (int i = 0; i < 100; ++i){
-        counter.fetch_add(1);  //complete RMW at a time
+        counter.fetch_add(1);  //complete RMW at a time  //internally: counter.fetch_add(1, memory_order_seq_cst);  
         cout<<"id:"<<id<<" "<<counter<<endl;
     }
 }
