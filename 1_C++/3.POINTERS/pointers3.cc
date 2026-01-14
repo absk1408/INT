@@ -2,11 +2,20 @@
 //#include<bits/stdc++.h>
 #include<iostream>
 #include<algorithm>
-#include<memory>
 using namespace std;
 //
+
+struct S {
+    int x=99;
+};
+
+S s;
+S* p = &s;
+
 int main(){
-    unique_ptr<int> uptr (new int(42));  //but unsafe
-    cout<<*uptr<<endl;
+    //
+
+p->x = 10;   // ❌ WRONG
+
     return 0;
 }

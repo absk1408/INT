@@ -7,7 +7,8 @@ int& getReference() {
 }
 
 int main() {
-    int &ref = getReference();
-    cout << ref;
+    //int &ref = getReference();
+    cout<<getReference()<<endl;
+   // cout << ref;
     return 0;
 }

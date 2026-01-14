@@ -15,7 +15,7 @@ class SP{  //unique_ptr
     SP(const SP&)=delete;
     SP& operator=(const SP&)=delete;
 
-    T operator*(){
+    T& operator*(){
         cout<<"im * operator"<<endl;
         return *ptr;
     }
@@ -26,7 +26,7 @@ class SP{  //unique_ptr
         ptr=temp.ptr;
         temp.ptr=nullptr;
     }
-    SP&& operator=(SP&& temp){
+    SP& operator=(SP&& temp){
         if(this==&temp) return *this;
         delete ptr;
         ptr=temp.ptr;
@@ -38,20 +38,8 @@ class SP{  //unique_ptr
         ptr=nullptr;
     }
 };
-class base{
-    int a;char c;public:
-    base(int a,char c){
-    this->a=a;
-    this->c=c;}
-};
-template<typename T, typename... Arg>
-SP<T> make_SP(Arg&&... a){
-    return SP<T>(new T(forward<Arg> (a)...));
-}
 int main(){
     SP<int> up(new int (10));
     cout<<*up<<endl;
-    SP<base> up2=make_SP<base>(100,'A');
-
     return 0;
 }

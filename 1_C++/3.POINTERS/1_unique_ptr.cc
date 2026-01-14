@@ -14,6 +14,6 @@ int main(){
     unique_ptr<int> uptr=make_unique<int>(10);
     //unique_ptr<int> uptr2=uptr; //error
     unique_ptr<int> uptr2=move(uptr); //can transfer the ownership by smart pointer
-    //cout<<*uptr<<endl; segmentation fault
+    //cout<<*uptr<<endl; segmentation fault // dereferncing a nullptr
     cout<<*uptr2<<endl; 
 }

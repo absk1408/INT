@@ -20,3 +20,6 @@ int main(){
     cout<<sp2.use_count()<<endl;
     return 0;
 }
+
+//because this is a "raw pointer" if you going to create a shared pointer with that it will create a new control block 
+//and then both going to perform the double delete may lead to program crash as well.
