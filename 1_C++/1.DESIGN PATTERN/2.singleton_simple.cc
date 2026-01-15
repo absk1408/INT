@@ -25,13 +25,15 @@ write* write::instance=nullptr;
 
 class server{
     public:
-    void handlereq(string request){
-        write* ptr=write::getinstance();
+    void handlereq(){
+        write* ptr=write::getinstance();    //no need of object creation.
         
     }
 };
 int main(){
     server s;
-    s.handlereq("i m logger");
+    s.handlereq();
+    server s2;
+    s2.handlereq();
     return 0;
 }

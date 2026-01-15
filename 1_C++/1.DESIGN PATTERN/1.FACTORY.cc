@@ -1,4 +1,5 @@
-// /The Factory Pattern in C++ is a creational design pattern that provides a way to create objects without exposing the creation logic to the client, and it lets you decide the object type at runtime.
+// /The Factory Pattern in C++ is a creational design pattern that provides a way to create objects without exposing the creation logic to the client, 
+//and it lets you decide the object type at runtime.
 //#include<bits/stdc++.h>
 #include<iostream>
 #include<algorithm>

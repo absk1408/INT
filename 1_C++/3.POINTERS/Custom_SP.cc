@@ -11,8 +11,7 @@ class SP{  //unique_ptr
         ptr=p;
     }
     ~SP(){delete ptr;}
-    //unique ptr
-    SP(const SP&)=delete;
+    SP(const SP&)=delete;    //unique ptr
     SP& operator=(const SP&)=delete;
 
     T& operator*(){

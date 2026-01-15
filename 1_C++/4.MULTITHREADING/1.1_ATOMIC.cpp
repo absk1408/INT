@@ -17,6 +17,6 @@ int main() {
     t1.join();
     t2.join();
 
-    cout << "Counter: " << counter << endl;  // Always 2000
+    cout << "Counter: " << counter << endl;  // Always 200
     return 0;
 }
