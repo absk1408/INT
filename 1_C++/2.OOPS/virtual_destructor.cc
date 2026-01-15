@@ -3,7 +3,7 @@ using namespace std;
 
 class Base {
 public:
-    virtual ~Base() {
+    ~Base() {
         cout << "Base destructor\n";
     }
 };
