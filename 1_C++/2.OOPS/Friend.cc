@@ -3,7 +3,7 @@
 #include<algorithm>
 using namespace std;
 class base{
-    int a=100;
+    int a=100; //private
     friend void func(base &b);
 };
 void func(base &b){

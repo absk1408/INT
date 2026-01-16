@@ -25,6 +25,6 @@ class der:public base{
     }
 };
 int main(){
-    der *d1=new base();
+    //der *d1=new base(); wrong conversion
     return 0;
 }

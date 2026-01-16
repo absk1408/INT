@@ -1,7 +1,8 @@
 #include <iostream>
 using namespace std;
 
-class Engine { int val;
+class Engine { 
+int val;
 public:
 Engine(int a){
     val=a;
@@ -14,7 +15,8 @@ Engine(int a){
 
 class Car {
 private:
-    Engine* engine;  // Car has an Engine
+    Engine* engine;  // Car has an Engine  // example of association //loose ownership
+    //Engine e1;  //example of composition //strong ownership
 public:
     Car(Engine* c):engine(c){}
     void start(){

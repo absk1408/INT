@@ -6,11 +6,11 @@ using namespace std;
 class base{
     public:int a;
 };
-class der:private base{
+class der:public base{  //private base{  not allowedd
     
 };
 int main(){
-    base *b1=new der;
+    base *b1=new der();
 
     return 0;
 }

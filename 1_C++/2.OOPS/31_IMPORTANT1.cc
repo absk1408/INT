@@ -9,7 +9,7 @@ class base{
 
     }
 };
-class der:private base{ //private inhertitence not allowed in polymorphism
+class der:public base{ //private base{   //private inhertitence not allowed in polymorphism
     public:
     void func(){
         cout<<"der"<<endl;

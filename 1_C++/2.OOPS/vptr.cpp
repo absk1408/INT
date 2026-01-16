@@ -3,7 +3,7 @@
 #include<algorithm>
 using namespace std;
 class base{
-    int a; //size ==8
+    int a;
     char c;
     public:
     virtual void fun1(){
@@ -28,9 +28,9 @@ class derived1:public base{
 };
 int main(){
     //base b1;
-    derived1 d1; //4+4+1+8
-    base *b1=&d1; //4+1+8
-    cout<<sizeof(*b1)<<" "<<sizeof(d1)<<endl;
+    derived1 d1; //16(base)+4(int)+4(padding)
+    base *b1=&d1; //4(a)+1(c)+8(vptr)+3(padding)
+    cout<<sizeof(d1)<<" "<<sizeof(*b1)<<endl;
     b1->fun1();
     return 0;
 }

@@ -8,13 +8,13 @@ class base {
 public:
 	base()	 
 	{ cout << "Constructing base\n"; }
-	virtual ~base()
+	~base()   //virtual ~base()
 	{ cout<< "Destructing base\n"; }	 
 };
 
 class derived: public base {
 public:
-	derived()	 
+	derived()
 	{ cout << "Constructing derived\n"; }
 	~derived()
 	{ cout << "Destructing derived\n"; }
@@ -26,6 +26,6 @@ base *b = &d;  // virtual keyword not required casuse derived created on stack
 
 base* b1=new derived();
 delete b1;
+cout<<"========"<<endl;
 return 0;
-
 }

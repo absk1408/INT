@@ -1,4 +1,4 @@
-// https://www.go4expert.com/articles/virtual-table-vptr-t16544/
+// :-><-: https://www.go4expert.com/articles/virtual-table-vptr-t16544/
 #include<iostream>
 using namespace std;
 class Base  
@@ -9,7 +9,7 @@ class Base
  }
     void function1() {cout<<"Base :: function1()\n";}
     void function2() {cout<<"Base :: function2()\n";}
-    void funtion5(){cout<<"base : function3"<<endl;}
+    void funtion5(){cout<<"base : function5"<<endl;}
     ~Base(){cout<<"base destructor"<<endl;}
 };  
    
@@ -26,7 +26,7 @@ public:
         cout<<"d1:function 3"<<endl;
     }
 };  
-  
+
 class Der2: public Der1 
 {  
 public: 

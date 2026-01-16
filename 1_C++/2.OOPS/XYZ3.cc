@@ -17,8 +17,11 @@ class der:public base{
 };
 
 int main(){
-    base* b2=static_cast<base*>(new der());
-    b2->func2;
+    base* b2=static_cast<base*>(new der());  //compiler do this casting automatically
+    base* b3=new der();
+   // b2->func2();   it is in derived class so it cant be use.  
+    b3->func();
+
     
     return 0;
 }

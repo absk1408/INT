@@ -4,7 +4,7 @@
 #include<memory>
 using namespace std;
  class base{
-    private:
+    public:
     int a;
     base(int a){
         this->a=a;

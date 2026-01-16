@@ -14,7 +14,7 @@ class B{
         cout<<"this is func of B"<<endl;
     }
 };
-class C:public B,private A{
+class C:public B,public A{  //private A{
     public:
     C(){cout<<"this is C"<<endl;}
     
@@ -23,7 +23,7 @@ class C:public B,private A{
 int main(){
     C obj;
     cout<<"hi "<<endl;
-    obj.func();
+    obj.A::func();
     return 0; 
 
 }

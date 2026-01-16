@@ -27,9 +27,4 @@ int main(){
     der d;
     int a=100;
     d.func2(a);
-
-
-    
-
-    
 }

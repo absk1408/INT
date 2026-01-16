@@ -1,5 +1,5 @@
-// C++ program to demonstrate how default arguments
-// and virtual function are used together
+// C++ program to demonstrate how default arguments and virtual function are used together
+//**Virtual functions are dynamically bound, but default arguments are statically bound. */
 #include <iostream>
 using namespace std;
 
@@ -18,8 +18,7 @@ class Derived : public Base {
 public:
 	// NOTE this virtual function will take an argument
 	// But haven't initialized yet
-	virtual void fun(int x=999)
-	{
+	void fun(int x=999){
 		cout << "Derived::fun(), x = " << x << endl;
 	}
 };
@@ -32,6 +31,5 @@ int main(){
 	// Derived class constructor
 	Base* bp = &d1;
 	bp->fun(); // Calling a derived class member function
-	return 0; // Returning 0 means the program
-			// Executed successfully
+	return 0; 
 }

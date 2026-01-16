@@ -5,9 +5,7 @@ class A;  // forward declaration
 
 class B {
 public:
-    virtual void show(A& obj){
-        
-    };   // declare
+    virtual void show(A& obj); // declare
 };
 
 class D : public B {

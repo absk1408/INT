@@ -17,12 +17,12 @@ class B:protected A{
     void func(){
         cout<<a<<" "<<b<<endl;
     }
-    friend class C;
+    //friend class C;
 };
 class C : protected B{
     public:
     void func2(){
-        cout<<a<<" "<<d<<endl;
+        cout<<a<<" "<<d<<endl;   //we cannot use b here
     }
 };
 int main(){
