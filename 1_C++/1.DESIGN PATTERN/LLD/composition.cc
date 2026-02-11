@@ -15,7 +15,7 @@ class A{
 };
 class B{
     public:
-    A* ptr;  //is-a relationship
+    A* ptr;  //has-a relationship
     int b;
     B(int b):ptr(new A(b)){
         this->b=b+100;

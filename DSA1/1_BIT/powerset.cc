@@ -1,22 +1,23 @@
-//#include<bits/stdc++.h>
-#include<iostream>
-#include<algorithm>
+#include <iostream>
 using namespace std;
-void powerset(int n,string str){
-    int p=pow(n,2);
-    for(int i=0;i<p;i++){
-        string s="";
-        for(int j=n-1;j>0;j--){
-            if(i%2!=0){
-                s=str[j]+s;
+
+void powerSet(string str) {
+    int n = str.length();
+    int p = 1 << n;   // 2^n subsets
+
+    for (int i = 0; i < p; i++) {
+        string s = "";
+        for (int j = 0; j < n; j++) {
+            if (i & (1 << j)) {
+                s += str[j];
             }
         }
-        cout<<s<<endl;
-        s="";
+        cout << s << endl;
     }
-
 }
-int main(){
-    //
+
+int main() {
+    string str = "abc";
+    powerSet(str);
     return 0;
 }

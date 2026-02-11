@@ -1,6 +1,7 @@
 #include<iostream>
 using namespace std;
-#define DEBUG
+#define DEBUG1
+#define dodo
 
 void func1(){
     cout<<"debug mode"<<endl;
@@ -12,8 +13,10 @@ void func2(){
 int main(){
     #ifdef DEBUG  //ifdef elif else endif
     func1();
-    #else
+    #elif defined(dodo)
     func2();
+    #else
+    cout<<"none"<<endl;
     #endif
     return 0;
 }

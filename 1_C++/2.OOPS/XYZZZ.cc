@@ -9,7 +9,7 @@ Engine(int a){
 
 }
     void start() {
-        cout << "Engine"<<val<<" started"<<endl;
+        cout << "Engine"<<" "<<val<<" started"<<endl;
     }
 };
 

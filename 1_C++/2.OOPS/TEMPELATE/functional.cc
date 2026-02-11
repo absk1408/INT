@@ -10,7 +10,7 @@ T add(T a,T b){
 
 //"abhishek" is const char*, we cant do operations on them. SO need to be cast manually
 int main(){
-    string s_res=add<string>("abhishek ","yadav");
+    string s_res=add("abhishek ","yadav");
     cout<<s_res<<endl;
     int i_res=100+200;
     cout<<i_res<<endl;

@@ -23,7 +23,7 @@ class C:public B,public A{  //private A{
 int main(){
     C obj;
     cout<<"hi "<<endl;
-    obj.A::func();
+    obj.A::func();   //if private A then it is inaccesible but access obj.B::func but still not obj.func()
     return 0; 
 
 }

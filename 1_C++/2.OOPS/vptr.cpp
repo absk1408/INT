@@ -15,6 +15,7 @@ class base{
 };
 class derived1:public base{
     int z;
+    //base b; 40
     public:
     void fun1(){
         cout<<"hey im a fun1 of der1"<<endl;

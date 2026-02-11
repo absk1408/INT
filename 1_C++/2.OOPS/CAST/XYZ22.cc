@@ -6,7 +6,9 @@ using namespace std;
 //
 int main(){
     void *ptr=malloc(1);
-    *ptr=1;
+    //*ptr=1;  
+     *(int*)ptr=1;
+    //*reinterpret_cast<int*>(ptr) = 1;
     int* iptr=(int*) ptr;
     cout<<*iptr<<endl;
 

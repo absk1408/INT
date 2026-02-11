@@ -33,7 +33,7 @@ void functionA() {
     catch (...) {  //universal catch block
     // handles anything thrown
     }
-} // best pair runtime_error(" ") => catch(cont exception &e) =>cout<<e.what;   or use catch(...) if unknown
+} // best pair || runtime_error(" ") => catch(cont exception &e) =>cout<<e.what;  || or use catch(...) if unknown
 int main() {
     functionA();
     cout<<"main over"<<endl;

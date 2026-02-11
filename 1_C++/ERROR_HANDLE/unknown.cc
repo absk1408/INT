@@ -11,8 +11,8 @@ class Unrelated : public Base {};
 
 int main() {
     try {
-        Base* base = new Unrelated();  // Actually points to Unrelated
-        Derived& d = dynamic_cast<Derived&>(*base);  // ❌ Invalid cast
+        Base* base = new Derived();  // Actually points to Unrelated
+        Unrelated& d = dynamic_cast<Unrelated&>(*base);  // ❌ Invalid cast
         cout << "Casted successfully\n";
     } catch (const bad_cast &e) {
         cout << "Caught bad_caaaaaast: " << e.what() << endl;

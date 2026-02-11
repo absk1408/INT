@@ -15,7 +15,7 @@ int main() {
 
     d.f = 3.14;
     cout << "Float: " << d.f << endl;    // Output: 3.14
-    cout << "char: " << d.c << endl;
+    cout << "char: " << d.c << endl;  //char: �
     cout << "Integer after float assignment: " << d.i << endl;  // ❌ Undefined behavior!
 
     return 0;

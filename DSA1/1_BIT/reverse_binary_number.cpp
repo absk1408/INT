@@ -1,18 +1,10 @@
-//reverse a binary number
-//#include<bits/stdc++.h>
-#include<iostream>
-#include<algorithm>
-using namespace std;
-//
-int main(){
-    int n=12;
-    int reverse=0;
-    while(n>0){
-        int res=n&1;
-        reverse=reverse<<1; 
-        reverse=reverse|res; //reverse=(reverse<<=1) | (n&1);
-        n=n>>1; //n>>=1;
+void reverseBinaryArray(int arr[], int n) {
+    int l = 0, r = n - 1;
+    while (l < r) {
+        arr[l] ^= arr[r];
+        arr[r] ^= arr[l];
+        arr[l] ^= arr[r];
+        l++;
+        r--;
     }
-    cout<<reverse;
-    return 0;
 }

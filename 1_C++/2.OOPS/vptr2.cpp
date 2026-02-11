@@ -1,13 +1,12 @@
 // :-><-: https://www.go4expert.com/articles/virtual-table-vptr-t16544/
 #include<iostream>
 using namespace std;
-class Base  
- {  
- public:  
- Base(){
-    cout<<"base created"<<endl;
- }
-    void function1() {cout<<"Base :: function1()\n";}
+class Base  {  
+   public:  
+   Base(){
+      cout<<"base created"<<endl;
+   }
+    void function1() {cout<<"Base :: function1()\n";} //function hiding by der1 func1()
     void function2() {cout<<"Base :: function2()\n";}
     void funtion5(){cout<<"base : function5"<<endl;}
     ~Base(){cout<<"base destructor"<<endl;}

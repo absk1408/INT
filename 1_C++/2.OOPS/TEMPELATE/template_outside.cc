@@ -8,7 +8,7 @@ class base{
     void func();
 };
 template<typename T>
-void base<T>::func(){
+void base<T>::func(){      //remember return_type class<T> :: function(){}
     cout<<"declare the function outside the class"<<endl;
 }
 int main(){

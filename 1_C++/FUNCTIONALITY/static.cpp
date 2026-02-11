@@ -8,13 +8,13 @@ void function() {
     static int staticVar = 20;  // Stored in Data Segment (.data)
     
     cout << "Local Variable (Stack): " << localVar << endl;
-    cout << "Static Variable (Data Segment): " << staticVar << endl;
+    cout << "Static Variable (Data Segment): " << ++staticVar << endl;
     cout << "in func " << &staticVar << endl;
 }
 
 int main() {
     function();
     function(); // staticVar retains its value
-    cout<<globalVar<<" "<<staticVar<<&staticVar<<endl;
+    cout<<&globalVar<<" "<<&staticVar<<endl;
     return 0;
 }

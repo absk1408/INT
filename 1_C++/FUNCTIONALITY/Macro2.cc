@@ -6,7 +6,7 @@ using namespace std;
 int main() {
     bool a=true;
     if (a)
-        PRINT_SUM(3, 4);  // Works fine
+        PRINT_SUM(3, 4);  // Works fine  // as it just used as a text replacement.
     else
         cout << "Else block\n";
 
