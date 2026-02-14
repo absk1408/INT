@@ -4,7 +4,7 @@
 #include<iostream>
 #include<algorithm>
 using namespace std;
-int max_sum(int *arr,int n){
+int max_sum(int *arr,int n){   //sum
     int res=arr[0];
     int curr=arr[0];
     for(int i=1;i<n;i++){
@@ -13,7 +13,7 @@ int max_sum(int *arr,int n){
     }
     return res;
 }
-void max_sum_ind(int arr[], int n){
+void max_sum_ind(int arr[], int n){  //indexes
     int res = arr[0], curr = arr[0];
 
     int start = 0, end = 0;
