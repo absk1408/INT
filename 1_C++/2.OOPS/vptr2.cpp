@@ -8,7 +8,7 @@ class Base  {
    }
     void function1() {cout<<"Base :: function1()\n";} //function hiding by der1 func1()
     void function2() {cout<<"Base :: function2()\n";}
-    void funtion5(){cout<<"base : function5"<<endl;}
+    virtual void funtion5(){cout<<"base : function5"<<endl;}
     ~Base(){cout<<"base destructor"<<endl;}
 };  
    
@@ -36,9 +36,8 @@ Der2(){
    void function2() { cout<< "D2 :: function2\n";};
    void function3(){ cout<<"funtion 3 of der 3"<<endl;};
    void function4(){cout<<"function 4"<<endl;};
-   void function1(){
-    cout<<"d2:function1"<<endl;
-   }
+   void function1(){cout<<"d2:function1"<<endl;}
+   void funtion5(){cout<<"der2: function5"<<endl;}
 };  
 
 int main()

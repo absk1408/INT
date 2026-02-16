@@ -11,7 +11,7 @@ class base:public enable_shared_from_this<base>{
 };
 int main(){
     //base b1;
-    //shared_ptr<base> sp=b1.getPTR(); 
+    //shared_ptr<base> sp=b1.getPTR();   //now it will work fine because of enable_shared_from_this<base> //single Proccess Control.
     //it only worked on object created through the shared_ptr ..
     
 

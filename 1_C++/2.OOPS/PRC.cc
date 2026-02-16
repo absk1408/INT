@@ -10,7 +10,7 @@ class child : private base {
 int b=100;
 public:
     void show() {
-        cout << a<<b;   // ✔ allowed here
+        cout << a<<" "<<b;   // ✔ allowed here
     }
 };
 

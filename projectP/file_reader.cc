@@ -9,11 +9,11 @@ using namespace std;
 int main(){
     ifstream file("file.txt");
     string input((istreambuf_iterator<char>(file)),istreambuf_iterator<char>());
-    cout<<input<<endl;
+    cout<<input<<"____"<<endl;
     file.clear();
     file.seekg(0);
     string str;
-    while(getline(file,str,'.')){
+    while(getline(file,str,' ')){
         cout<<str;
     }
     file.clear();

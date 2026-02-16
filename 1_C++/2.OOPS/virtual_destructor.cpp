@@ -27,5 +27,8 @@ base *b = &d;  // virtual keyword not required casuse derived created on stack
 base* b1=new derived();
 delete b1;
 cout<<"========"<<endl;
+
+
+b=nullptr;   //dangling pointer issue.
 return 0;
 }

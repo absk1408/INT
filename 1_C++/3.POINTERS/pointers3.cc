@@ -3,19 +3,14 @@
 #include<iostream>
 #include<algorithm>
 using namespace std;
-//
 
 struct S {
-    int x=99;
+    int x = 99;
 };
 
-S s;
-S* p = &s;
+S s;        // global object
+S* p = &s; // pointer to s
 
-int main(){
-    //
-
-p->x = 10;   // ❌ WRONG
-
-    return 0;
+int main() {
+    p->x = 10;  // assign through pointer
 }

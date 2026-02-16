@@ -8,8 +8,8 @@ int fetch_data(int id) {
 }
 
 int main() {
-    auto future1 = async(launch::async, fetch_data, 1);
-    auto future2 = async(launch::deferred, fetch_data, 2);
+    auto future1 = async(launch::async, fetch_data, 1);  //can create a new thread
+    auto future2 = async(launch::deferred, fetch_data, 2); // no new thread func going to call when needed
     // some work...
 
     int result1 = future1.get();

@@ -9,6 +9,7 @@ int main(){
     shared_ptr<int> ptr=make_shared<int>(10);
     weak_ptr<int> ptr2=ptr;
     shared_ptr<int> ptr3=ptr2.lock();
+    if(ptr3) cout<<"ptr3 succesfull"<<endl;  //v.important
     cout<<ptr.use_count()<<endl;
     return 0;
 }

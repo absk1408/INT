@@ -13,7 +13,7 @@ class base{
 };
 int main(){
     base b;
-    //cout<<b->a<<endl;
+    //cout<<b->a<<endl; //error
     cout<<*b.ptr<<endl; 
     //cout<<b->ptr<<endl; //error
     base *b2=new base();
@@ -21,6 +21,6 @@ int main(){
     cout<<*(b2->ptr)<<endl;
     cout<<*(*b2).ptr<<endl;  //  first we go inside the () then . is having higher precedence then *
 //
-    
+
     return 0;
 }

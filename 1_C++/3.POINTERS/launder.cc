@@ -12,6 +12,7 @@ int main() {
             // Reconstruct in-place
     new (c1) base{300,'Z'};
     cout << launder(b1)->a <<endl; // Defined behavior
+    base* bn=launder(b1); // ger the new pointer so you dont have to use lauder again and agian.
 
     //std::launder is used to safely access a new object that was created in the same memory after 
     //the previous object was destroyed. Without it, accessing the object through an old pointer may result 

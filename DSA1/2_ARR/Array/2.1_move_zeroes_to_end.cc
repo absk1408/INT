@@ -14,11 +14,13 @@ int main(){
             count++;
         }
     }
-/////
-int arr2[]={10,5,0,8,0,9,0};
-stable_partition(arr2,arr2+n,[](int x){return  x!=0;});
-    for(int i=0;i<n;i++){
-        cout<<arr2[i]<<" ";
-    }
+
+    int arr2[]={10,5,10,8,3,9,7};
+    stable_partition(arr2,arr2+n,[](int x){return  (x%2==0);});
+        
+        for(int i=0;i<n;i++){
+            cout<<arr2[i]<<" ";
+        }
+        
     return 0;
 }

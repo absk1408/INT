@@ -1,10 +1,10 @@
-//#include<bits/stdc++.h>
+//union means: all distinct (unique) elements present in either of the arrays.
 #include<iostream>
 #include<algorithm>
 #include<unordered_set>
 using namespace std;
 int unionSize(int arr1[],int m, int arr2[],int n){
-    unordered_set<int> s(arr1,arr1+m);
+    unordered_set<int> s(arr1,arr1+n);
     s.insert(arr2,arr2+m);
     return s.size();
 

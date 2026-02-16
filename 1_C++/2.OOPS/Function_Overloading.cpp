@@ -6,7 +6,7 @@ public:
         cout << "f(int): ";
         return i+3;
     }
-    int f(double d){
+    double f(double d){
         cout << "f(dob): ";
         return d+6;
         
@@ -16,7 +16,7 @@ class Derived : public Base{
 
 };
 int main(){
-    Derived* dp = new Derived;
+    Derived* dp = new Derived{};
     cout << dp->f(3) << '\n';
     cout << dp->f(3.3) << '\n';
     delete dp;

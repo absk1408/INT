@@ -4,7 +4,8 @@
 #include<algorithm>
 using namespace std;
 class base{
-    public:int a;
+    public:
+    int a;
 };
 class der:public base{  //private base{  not allowedd
     

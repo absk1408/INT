@@ -14,7 +14,7 @@ class base{
 };
 class der: public base{ 
     public:
-    using base::func2;
+    //using base::func2;
     int b;
     void func(){
         cout<<"im in der"<<endl;
@@ -26,6 +26,9 @@ class der: public base{
 int main(){
     der d;
     int a=100;
-    d.func2(a);
+   // d.func2(a);
     d.func2();
 }
+
+
+//base class function will hide if derived class having same function name and object of derived is created;

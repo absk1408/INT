@@ -17,7 +17,11 @@ class B:protected A{
     void func(){
         cout<<a<<" "<<b<<endl;
     }
-    //friend class C;
+    friend class C;   /*Each class controls access to its own private members only.
+So:
+A controls who can access A’s private data
+B controls who can access B’s private data
+They are totally separate decisions. */
 };
 class C : protected B{
     public:

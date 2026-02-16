@@ -18,7 +18,7 @@ int main(){
         cout<<*(arr+i)<<" "; //bracket is important.
     }cout<<endl;
     /////////////////////////////
-    int *p=new int [10];
+    int *p=new int[10];  p[5]=99;
     for(int i=0;i<10;i++){
         cout<<p[i]<<" ";
     }cout<<endl;

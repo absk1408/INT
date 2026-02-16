@@ -6,7 +6,7 @@ int getPeak(int arr[], int n){ //naive 0(n)
     int l=0;int r=n-1;
     while(l<=r){
         int mid=l+(r-l)/2;
-        if( (mid==0||arr[mid-1]<arr[mid]) && (arr[mid]==n-1|| arr[mid]>arr[mid+1] )){
+        if( (mid==0||arr[mid-1]<=arr[mid]) && (arr[mid]==n-1|| arr[mid]>=arr[mid+1] )){
             return arr[mid];
         }
         else if(arr[mid]>0&&arr[mid]<arr[mid-1]){

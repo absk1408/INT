@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-
+//enum (enumeration) is a user-defined data type that represents a fixed set of named integer constants.
 enum class color { red, green, blue, white };
 enum class color2{ red, green, blue, white };
 

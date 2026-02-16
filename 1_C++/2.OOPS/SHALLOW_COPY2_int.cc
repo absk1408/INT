@@ -12,7 +12,8 @@ class base{
     }
     base(base& temp){
         a=temp.a;
-        p=temp.p;
+        p=new int(*(temp.p));
+        //p=temp.p;
     }
     void print(){
         cout<<a<<" "<<*p<<endl;

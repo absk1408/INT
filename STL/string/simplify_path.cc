@@ -5,20 +5,21 @@
 #include<algorithm>
 #include<stack>
 #include<string>
+#include<sstream>
 using namespace std;
 stack<string> st;
 void forward_san(string& str){
-    int s=1;
-    for(int i=1;i<str.length();i++){
-        if(str[i]=='/'&& str[s-1]=='/'){
-            continue;
-        }
-        else{
-            str[s]=str[i];
-            s++;
-        }
+    deque<string> dq;
+    string s="/home////user/Documents/../Pictures";
+    stringstream ss(s);
+    string token;
+    while(getline(ss,token,'/')){
+        dq.push_back(token);
     }
-    str.resize(s);
+
+    for(auto &x : dq){
+        if(!x.empty()) cout <<x<<endl;
+    }
 }
 void convert_str(string &str){
     string curr="";

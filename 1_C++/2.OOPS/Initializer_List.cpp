@@ -4,6 +4,9 @@ using namespace std;
 class Test{
     int x;
     public:
+    Test(){
+        cout<<"default"<<'\n';
+    }
 
     Test(int y){
         cout<<"parameter "<<'\n';
@@ -12,9 +15,9 @@ class Test{
 class func{
     Test t;
     public:
-    func(){  //if we not initalize the base class in initalizer list then default 
+    func():t(10){  //if we not initalize the base class in initalizer list then default 
             //constructor get called of the base class
-        t=Test();
+       // t=Test(100);
     }
    //func():t(1900){}
 };

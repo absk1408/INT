@@ -7,11 +7,11 @@ int main(){
     string s="abhishek";
     s.insert(5,"xxx");
     cout<<s<<endl;
-    s.erase(5,3);
+    //s.erase(5,3);
     cout<<s<<endl;
     s.replace(1,4,"x");
     cout<<s<<endl;
-    s.replace(1,4,"xxxxxxxxxxxxx");
+    s.replace(1,4,"xxxxxxxxxxxxxxxxxxxx");
     cout<<s<<endl;
     //////
     string s1="abhishek";

@@ -4,7 +4,8 @@
 #include<algorithm>
 using namespace std;
 template<class T>
-class SP{  //unique_ptr
+class SP{  //unique_ptr 
+public:
     T* ptr;
     public:
     SP(T* p){
@@ -38,7 +39,8 @@ class SP{  //unique_ptr
     }
 };
 int main(){
-    SP<int> up(new int (10));
+    SP<int> up=new int(100);
     cout<<*up<<endl;
+    //cout<<up->ptr<<endl; wrong
     return 0;
 }

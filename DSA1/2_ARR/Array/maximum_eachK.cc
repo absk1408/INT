@@ -1,22 +1,26 @@
-//#include<bits/stdc++.h>
+//#include<bits/stdc++.h> 
+/*📌 Problem: Sliding Window Maximum
+You are given an array of integers arr and an integer k.
+For each contiguous subarray (window) of size k, find the maximum element in that window.*/
 #include<iostream>
 #include<algorithm>
-#include<deque>
+#include<queue>
+#include<vector>
 using namespace std;
 
-vector<int> maxSlidingWindow(vector<int> arr,int k){
-    vector<int>res; deque<int> dq;
-    for(int i=0;i<k;i++){
-        while(!dq.empty()&&arr[dq.back()]<=arr[i]) dq.pop_back();
-        dq.push_back(i);
+vector<int> maxSlidingWindow(vector<int>& nums, int k){
+    priority_queue<pair<int,int>> pq;
+    vector<int> res;
+
+    for(int i=0;i<nums.size();i++){
+        pq.push({nums[i], i});
+
+        while(pq.top().second <= i-k)
+            pq.pop();
+
+        if(i >= k-1)
+            res.push_back(pq.top().first);
     }
-    for(int i=k;i<arr.size();i++){
-        res.push_back(arr[dq.front()]);
-        if(!dq.empty()&&dq.front()<=i-k) dq.pop_front();
-        while(!dq.empty()&&dq.front()<arr[i]) dq.pop_back();
-        dq.push_back(i);
-    }
-    res.push_back(arr[dq.front()]);
     return res;
 }
 

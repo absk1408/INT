@@ -9,7 +9,7 @@ int main(){
    auto it=id.begin();
    auto it2=st.begin();
    while(it!=id.end()&&it2!=st.end()){
-       vec.push_back(make_pair(*it2,*it));
+       vec.push_back({*it2,*it});
        it2++;it++;
    }
    for(auto it1=vec.begin();it1!=vec.end();it1++ ){

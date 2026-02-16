@@ -49,7 +49,7 @@ class child: public derived1, public derived2{
     }
 };
 int main(){
-    child *c1=dynamic_cast<child*>(new base());
-    if(c1) cout<<"hello"<<endl;
+    child *c1=dynamic_cast<child*>(new base());  //will not work
+    if(c1) cout<<"created"<<endl;
     delete c1;
 }

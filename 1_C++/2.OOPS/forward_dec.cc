@@ -3,6 +3,16 @@
 #include<algorithm>
 using namespace std;
 
+//class derived;   
+/*   derived is only forward declared (incomplete type)
+The compiler knows:
+“A class named derived exists”
+But it does NOT know:
+What members it has
+That data exists 
+*/
+
+
 class derived {
 public:
     int data;
@@ -26,6 +36,7 @@ public:
         }
     }
 };
+
 
 int main() {
     derived d1(100);

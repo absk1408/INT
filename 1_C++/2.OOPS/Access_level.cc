@@ -4,7 +4,7 @@
 #include<algorithm>
 using namespace std;
 class base{
-    public:
+    public:   //private  then cant be acccess in derived
     int x;
     base(int a):x(a){
         cout<<"im in base"<<endl;

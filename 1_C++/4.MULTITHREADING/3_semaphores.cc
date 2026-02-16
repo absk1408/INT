@@ -1,6 +1,7 @@
 //#include<bits/stdc++.h>
 #include<iostream>
-#include<algorithm> 
+#include<algorithm>
+#include<vector> 
 #include<mutex>
 #include<thread>
 #include<condition_variable>
@@ -19,8 +20,11 @@ class semaphores{
         --counter;
     }
     void signal(){
-        unique_lock<mutex> lock(mtx);
-        ++counter;
+        {
+            unique_lock<mutex> lock(mtx);
+            ++counter;
+        }
+        cv.notify_one();   // 🔥 important
     }
 };
 semaphores sm;
@@ -32,7 +36,7 @@ void func(int id){
 int main(){
     vector<thread> arr;
     for(int i=0;i<10;i++){
-        arr.emplace_back(func,i+1);
+        arr.emplace_back(func,i);
     }
     for(auto& t :arr){
         t.join();

@@ -15,8 +15,8 @@ int main(){
     //struct str a2(99);
     a1.print(); 
     //or
-      //str p(100);  // correct object construction with argument
-    //p.print(); 
+    str p(190);  // correct object construction with argument
+    p.print(); 
 
     return 0;
 }
