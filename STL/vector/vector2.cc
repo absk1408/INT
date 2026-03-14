@@ -7,7 +7,8 @@ int main() {
 
     auto it = v.end();
     cout << *(it-1) << endl;   // OK
-     cout << *it << endl;   // ❌ UB
+     cout << *it << endl;   // ❌ UB// v.end() is always a undefinded behaviour.
+    
 
     v.erase(it);               // ❌ UB
 }

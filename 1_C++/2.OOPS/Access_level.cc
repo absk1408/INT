@@ -13,7 +13,7 @@ class base{
 };
 class der:private base{
     public:
-    der(int a):base(100){  //but can access in derived
+    der(int a):base(x){  //but can access in derived
         cout<<"im in derived"<<x<<endl;  
     }
 };

@@ -13,10 +13,10 @@ class base{
 class base2{
     public:
     void func(){
-        cout<<"im in base2"<<endl;
+        cout<<"im in base2 func"<<endl;
     }
     virtual void show(){
-        cout<<"im der3"<<endl;
+        cout<<"im base2 show"<<endl;
     }
 };
 class d3:public base2{
@@ -30,3 +30,10 @@ int main(){
     b->show();
     return 0;
 }
+/*class d3 : public base2, public base {
+public:
+    void show() override {
+        base::show();   // by this we can run base::show
+    }
+};
+*/

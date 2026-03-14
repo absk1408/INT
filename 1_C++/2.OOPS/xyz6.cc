@@ -8,9 +8,14 @@ using namespace std;
 //
 int main(){
 
-    //unique_ptr<void,void(*)(void*)>uptr(malloc(sizeof(int)),free);
+    //unique_ptr<void,void(*)(void*)> uptr (malloc(sizeof(int)),free);
+
+    //unique_ptr<FILE, decltype(&fclose)> file( fopen("test.txt", "w"), fclose);
+
     //*static_cast<int*>(uptr.get())=100;
+
     //cout<<*static_cast<int*>(uptr.get())<<endl;
+    
     unique_ptr<int>uptr(new int(10));
     cout<<*uptr<<endl;
     

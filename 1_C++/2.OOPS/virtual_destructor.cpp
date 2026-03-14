@@ -29,6 +29,6 @@ delete b1;
 cout<<"========"<<endl;
 
 
-b=nullptr;   //dangling pointer issue.
+b1=nullptr;   //avoid dangling pointer
 return 0;
 }

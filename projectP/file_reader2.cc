@@ -16,10 +16,10 @@ int main(){
         cout<<str<<endl;
     }
     file.clear();
-   // ofstream wfile("file.txt",ios::app);
+   /*// ofstream wfile("file.txt",ios::app);
     file<<endl<<"i wrote this"<<endl;
     file<<"yes i did this"<<endl;
-    file.close();
+    file.close(); */
 
 
 

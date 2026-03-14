@@ -4,17 +4,16 @@ using namespace std;
 class Engine { 
 int val;
 public:
-Engine(int a){
-    val=a;
-
-}
+    Engine(int a){
+        val=a;
+    }
     void start() {
         cout << "Engine"<<" "<<val<<" started"<<endl;
     }
 };
 
 class Car {
-private:
+private: public:
     Engine* engine;  // Car has an Engine  // example of association //loose ownership
     //Engine e1;  //example of composition //strong ownership
 public:
@@ -24,10 +23,10 @@ public:
         cout << "Car started.\n";
     }
 };
-
 int main() {
     Engine e(100);
     Car myCar(&e);
     myCar.start();
+    (myCar.engine)->start();
     return 0;
 }

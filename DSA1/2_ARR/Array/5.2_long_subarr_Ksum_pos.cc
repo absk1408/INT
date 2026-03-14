@@ -28,19 +28,5 @@ int lon_sub(vector<int>& v, int sum){
 int main(){
     int n, k;
     cout << "Enter number of elements: ";
-    cin >> n;
-
-    vector<int> v(n);
-    cout << "Enter array elements (positive only): ";
-    for(int i = 0; i < n; i++){
-        cin >> v[i];
-    }
-
-    cout << "Enter target sum K: ";
-    cin >> k;
-
-    cout << "Length of longest subarray with sum K: ";
-    cout << lon_sub(v, k) << endl;
-
     return 0;
 }

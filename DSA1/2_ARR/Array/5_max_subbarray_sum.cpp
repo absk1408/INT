@@ -5,7 +5,7 @@
 #include<algorithm>
 using namespace std;
 int max_sum(int *arr,int n){   //sum
-    int res=arr[0];
+    int res=arr[0];    //best way is to intialize fist element as it saves from stackoverflow(int_min) or negative (all negaitve) errors.
     int curr=arr[0];
     for(int i=1;i<n;i++){
         curr=max(curr+arr[i],arr[i]);
@@ -14,11 +14,11 @@ int max_sum(int *arr,int n){   //sum
     return res;
 }
 void max_sum_ind(int arr[], int n){  //indexes
-    int res = arr[0], curr = arr[0];
 
     int start = 0, end = 0;
     int tempStart = 0;
 
+    int res = arr[0], curr = arr[0];
     for(int i = 1; i < n; i++){
         if(arr[i] > curr + arr[i]){
             curr = arr[i];

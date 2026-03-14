@@ -9,21 +9,22 @@ using namespace std;
 int main(){
     ifstream file("file.txt");
     string input((istreambuf_iterator<char>(file)),istreambuf_iterator<char>());
-    cout<<input<<"____"<<endl;
+    cout<<input<<endl;
+    cout<<"____"<<endl;
     file.clear();
     file.seekg(0);
     string str;
     while(getline(file,str,' ')){
-        cout<<str;
+        cout<<str<<"-";
     }
     file.clear();
     file.seekg(0);
     file.close();
 
-    ofstream wfile("file.txt",ios::app);
+    /*ofstream wfile("file.txt",ios::app);
     wfile<<endl<<"i wrote this"<<endl;
     wfile<<"yes i did this"<<endl;
-    wfile.close();
+    wfile.close();*/
 
 
 

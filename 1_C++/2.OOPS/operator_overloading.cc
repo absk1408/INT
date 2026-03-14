@@ -11,7 +11,8 @@ class base{ public:
     }
     base operator+(base temp){
         cout<<"this is operator +"<<endl;
-        return x+=temp.x;
+        return x+=temp.x;   //performs explicit conversion int->obj 
+        // return base(x + temp.x);
     }
 };
 

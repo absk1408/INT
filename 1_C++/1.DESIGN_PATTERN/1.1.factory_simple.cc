@@ -19,7 +19,7 @@ class sn:public client{
 };
 class factory{
     public:
-    static unique_ptr<client> create(string name){
+    static unique_ptr<client>      create(string name)     {
         if(name=="dn"){
             return make_unique<dn>();
         }
@@ -34,12 +34,12 @@ class server{
     void handle(string name){
         unique_ptr<client> ptr=factory::create(name);
 
-    if(ptr){
-        ptr->connect();
-    }
-    else{
-        cout<<"unknown client"<<endl;
-    }
+        if(ptr){
+            ptr->connect();
+        }
+        else{
+            cout<<"unknown client"<<endl;
+        }
     }
 };
 int main(){

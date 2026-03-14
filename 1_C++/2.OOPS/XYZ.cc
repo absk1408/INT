@@ -26,6 +26,7 @@ class der: public base{
 int main(){
     der d;
     int a=100;
+    d.func();
    // d.func2(a);
     d.func2();
 }

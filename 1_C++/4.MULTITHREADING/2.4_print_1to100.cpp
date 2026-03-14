@@ -9,8 +9,8 @@ void printNumbers(int id) {
     //lock_guard<mutex> lock(mtx); // Automatically acquires and releases the lock
     mtx.lock();
     for (int i = 1; i <=50; ++i) {
-        cout << "Thread " << id << ": " << a << endl;
-        ++a;
+        cout << "Thread " << id << ": " << a++ << endl;
+        //++a;
     }
     mtx.unlock();
 }

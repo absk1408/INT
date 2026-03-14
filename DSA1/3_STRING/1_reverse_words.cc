@@ -18,7 +18,7 @@ string rev_words(const string & s){
 }
 
 int main(){
-    string s="TUF is great for interview preparation";
+    string s="ABSK is great for interview preparation";
     cout<<"Before reversing words: "<<endl;
     cout<<s<<endl;
     string res=rev_words(s);

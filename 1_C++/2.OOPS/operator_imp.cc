@@ -18,10 +18,8 @@ using namespace std;
  };
 int main(){
     base b(99);
-    cout<<b->a<<endl;
+    cout<<b->a<<endl;   //runs custom operator
    ////
-    base *b2=new base(100);
-    cout<<b2->a<<endl;
-
-
+    base *b2=new base(100); 
+    cout<<b2->a<<endl;    //raw pointer doesnt run custome -> operator
 }

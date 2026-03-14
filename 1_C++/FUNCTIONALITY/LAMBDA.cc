@@ -29,3 +29,4 @@ int main() {
     return 0;
 }
 */
+/*Lambdas generate a unique unnamed type internally, so we cannot explicitly write the type. auto allows the compiler to deduce the lambda's type automatically.*/

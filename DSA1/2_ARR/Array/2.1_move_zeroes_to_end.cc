@@ -14,7 +14,7 @@ int main(){
             count++;
         }
     }
-
+//even-odd
     int arr2[]={10,5,10,8,3,9,7};
     stable_partition(arr2,arr2+n,[](int x){return  (x%2==0);});
         

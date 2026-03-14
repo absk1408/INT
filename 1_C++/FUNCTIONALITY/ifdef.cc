@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-#define DEBUG1
+#define DEBUG
 #define dodo
 
 void func1(){

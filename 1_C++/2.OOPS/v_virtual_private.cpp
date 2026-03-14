@@ -22,6 +22,6 @@ public:
 int main() {
     Derived d;
     Base* b = &d;
-    //b->show(); // ❌ ERROR: 'show' is private in 'Base'
+    //b->show(); // ❌ ERROR: 'show' is private in 'Base'  // access specifier and default argument is considered of base only.
     b->callShow();  // ✅ Works, and calls Derived::show()
 }

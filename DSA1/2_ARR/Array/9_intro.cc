@@ -15,7 +15,7 @@ int main(){
     for(int i=0;i<50;i++){
         cout<<arr2[i]<<" ";
     }
-
+cout<<endl;
     vector<int>v{1,2,3,4,5};
     v.erase(v.begin()+1,v.begin()+3);
     for(auto i:v){

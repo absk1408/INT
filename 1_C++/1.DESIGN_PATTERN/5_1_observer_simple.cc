@@ -43,12 +43,7 @@ class myserver:public server{
     }
     //void delete_node()
 
-
-
-
 };
-
-
 int main(){
     client1 sn("storage node");
     client1 dn("data node");
@@ -57,9 +52,5 @@ int main(){
     s.add_client(dn);
     s.notify(dn);
     s.broadcast();
-
-
-
-
     return 0;
 }

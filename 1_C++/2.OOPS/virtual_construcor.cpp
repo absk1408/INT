@@ -23,3 +23,6 @@ int main(){
     cloneobj->display();
     delete cloneobj;
 }
+/*This code demonstrates a classic C++ design pattern called the Virtual Constructor / Prototype pattern using clone().
+The goal is:
+Create a copy of an object without knowing its exact derived type.*/

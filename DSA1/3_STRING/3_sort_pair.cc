@@ -16,7 +16,7 @@ int main(){
         string res;
         int num;
         if(ss>>res>>num){
-            vec.push_back(make_pair(res,num));
+            vec.push_back({res,num});
         }
     }
     for(auto x:vec){

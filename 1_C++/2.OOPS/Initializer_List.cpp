@@ -16,8 +16,8 @@ class func{
     Test t;
     public:
     func():t(10){  //if we not initalize the base class in initalizer list then default 
-            //constructor get called of the base class
-       // t=Test(100);
+                    //constructor get called of the base class
+                    // t=Test(100);
     }
    //func():t(1900){}
 };

@@ -3,7 +3,7 @@
 #include<array>
 //
 using namespace std;
-array<int,5>fun(array<int,5> &a1){
+array<int,5> fun(array<int,5> &a1){
     for(auto x:a1) a1[x]=5;
     return a1;
 }
