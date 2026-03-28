@@ -3,7 +3,7 @@
 using namespace std;
 int fun(int a){
     cout<<++a<<endl;
-    return a++;
+    return a++;  // thread doesnt wait to the return value
 }
 class A{
     public:

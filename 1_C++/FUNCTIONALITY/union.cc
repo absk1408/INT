@@ -7,6 +7,8 @@ union Data {
     char c;
 };
  //keep defining keep using 
+ //A union in C/C++ is a special data type where all members share the same memory location.
+//base on largest data type.
 int main() {
     Data d;
     

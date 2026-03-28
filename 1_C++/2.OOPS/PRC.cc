@@ -9,7 +9,7 @@ protected:
 class child : private base {
 int b=100;
 public:
-    void show() {
+    void show(){
         cout << a<<" "<<b;   // ✔ allowed here
     }
 };

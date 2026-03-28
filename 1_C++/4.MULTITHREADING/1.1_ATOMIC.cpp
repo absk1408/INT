@@ -3,7 +3,7 @@
 #include <iostream>
 using namespace std;
 
-atomic<int> counter(0);
+atomic<int> counter=0;
 
 void increment(int id) {
     for (int i = 0; i < 100; ++i){

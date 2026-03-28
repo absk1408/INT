@@ -9,12 +9,14 @@ public:
     }
 };
 
-void func(A a) {
-    cout << "Function called\n";
+void func(A a,A b) {
+    //int c=a+b; //error
+    //cout << "Function called\n"<<c<<endl; //error
+    cout << "Function called\n"<<endl;
 }
 
 
 int main() {
-    func(10);  // Implicitly converts int 10 to A using A(int)
+    func(10,100);  // Implicitly converts int 10 to A using A(int)
     return 0;
 }

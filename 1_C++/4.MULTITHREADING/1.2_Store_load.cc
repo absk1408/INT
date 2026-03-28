@@ -6,7 +6,7 @@ atomic<bool> flag = false;
 int value = 0;
 void writer() {
     value = 100;  // Step 1: write data
-    flag.store(true, memory_order_release);  // Step 2: signal with release  //if we only going to use flag, then it might turn  before writing because of memory ordering done by the compiler
+    flag.store(true, memory_order_release);  //if we only going to use flag, then it might turn  before writing because of memory ordering done by the compiler
 }
 void reader() {
     while (!flag.load(memory_order_acquire)) {

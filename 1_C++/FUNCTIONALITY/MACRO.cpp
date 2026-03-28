@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-
+//Macros are handled by the preprocessor (before compiler )// no tye checking so dangeruous.
 #define SQUARE(x) (x * x)  // Macro function
 
 int main() {

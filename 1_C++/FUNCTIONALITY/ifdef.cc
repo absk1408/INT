@@ -2,7 +2,7 @@
 using namespace std;
 #define DEBUG
 #define dodo
-
+//#ifdef is a preprocessor directive used for conditional compilation.
 void func1(){
     cout<<"debug mode"<<endl;
 }

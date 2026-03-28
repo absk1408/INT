@@ -2,6 +2,8 @@
 #include<iostream>
 #include<algorithm>
 using namespace std;
+//part of C
+//used for backward compatibility.
 struct str{
     int a;
    str(int a){
